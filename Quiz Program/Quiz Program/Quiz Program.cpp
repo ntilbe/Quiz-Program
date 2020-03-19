@@ -46,7 +46,7 @@ int main()
 	cout << endl;
 	string Respond;
 	
-	do
+	while (true)
 	{
 		cout << "Are you ready to take the Quiz " << Name << "? Yes/No. " << endl;
 		cin >> Respond;
@@ -57,18 +57,19 @@ int main()
 			cout << endl;
 			cout << "Ok, Good Luck!" << endl;
 			cout << endl;
+			break;
 		}
 		else if (Respond == "No" || Respond == "no")
 		{
 			cout << "Ok, Goodbye!" << endl; // Exits
-			return 0;
+			break;
 		}
 		else
 		{
 			cout << "Invalid Response. Please try again." << endl;
 			cout << endl;
 		}
-	} while (Respond != "yes" || Respond != "Yes" || Respond != "No" || Respond != "no");
+	} 
 
 	Question q1; // questions/instances
 	Question q2;
