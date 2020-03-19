@@ -44,21 +44,23 @@ int main()
 	cout << "What's your name? " << endl;
 	cin >> Name;
 	cout << endl;
-	cout << "How old are you? " << endl;
-	cin >> Age;
-	cout << endl;
 	string Respond;
 	cout << "Are you ready to take the Quiz " << Name << "? Yes/No. " << endl;
 	cin >> Respond;
-	if (Respond == "yes") // Continues on to quiz
+	if (Respond == "yes" || Respond == "Yes") // Continues on to quiz
 	{
 		cout << endl;
 		cout << "Ok, Good Luck!" << endl;
 		cout << endl;
 	}
-	else
+	else if (Respond == "No" || Respond == "no")
 	{
 		cout << "Ok, Goodbye!" << endl; // Exits
+		return 0;
+	}
+	else
+	{
+		cout << "Invalid Response. Please try again." << endl; 
 		return 0;
 	}
 

@@ -1,1 +1,3 @@
-﻿  Quiz Program.vcxproj -> C:\Users\User\source\repos\ntilbe\Quiz-Program\Quiz Program\Debug\Quiz Program.exe
+﻿  Quiz Program.cpp
+C:\Users\User\source\repos\ntilbe\Quiz-Program\Quiz Program\Quiz Program\Quiz Program.cpp(43,6): warning C4101: 'Age': unreferenced local variable
+  Quiz Program.vcxproj -> C:\Users\User\source\repos\ntilbe\Quiz-Program\Quiz Program\Debug\Quiz Program.exe
