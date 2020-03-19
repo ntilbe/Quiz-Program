@@ -62,7 +62,7 @@ int main()
 		else if (Respond == "No" || Respond == "no")
 		{
 			cout << "Ok, Goodbye!" << endl; // Exits
-			break;
+			return 0;
 		}
 		else
 		{
