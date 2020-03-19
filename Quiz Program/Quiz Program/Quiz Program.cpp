@@ -45,24 +45,30 @@ int main()
 	cin >> Name;
 	cout << endl;
 	string Respond;
-	cout << "Are you ready to take the Quiz " << Name << "? Yes/No. " << endl;
-	cin >> Respond;
-	if (Respond == "yes" || Respond == "Yes") // Continues on to quiz
+	
+	do
 	{
-		cout << endl;
-		cout << "Ok, Good Luck!" << endl;
-		cout << endl;
-	}
-	else if (Respond == "No" || Respond == "no")
-	{
-		cout << "Ok, Goodbye!" << endl; // Exits
-		return 0;
-	}
-	else
-	{
-		cout << "Invalid Response. Please try again." << endl; 
-		return 0;
-	}
+		cout << "Are you ready to take the Quiz " << Name << "? Yes/No. " << endl;
+		cin >> Respond;
+
+
+		if (Respond == "yes" || Respond == "Yes") // Continues on to quiz
+		{
+			cout << endl;
+			cout << "Ok, Good Luck!" << endl;
+			cout << endl;
+		}
+		else if (Respond == "No" || Respond == "no")
+		{
+			cout << "Ok, Goodbye!" << endl; // Exits
+			return 0;
+		}
+		else
+		{
+			cout << "Invalid Response. Please try again." << endl;
+			cout << endl;
+		}
+	} while (Respond != "yes" || Respond != "Yes" || Respond != "No" || Respond != "no");
 
 	Question q1; // questions/instances
 	Question q2;
